@@ -61,6 +61,19 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
+              <h3 className="mb-0">JS and React's mentor</h3>
+              <div className="subheading mb-3">CoderHouse</div>
+              <p>
+                Helping students in classes and after it in order to help them understand the basis and the concepts of Javascript and the React library, giving support and feedback to the student's code while revise the challenges of each class
+              </p>
+            </div>
+            <div className="resume-date text-md-right">
+              <span className="text-primary">July 2020 - Present</span>
+            </div>
+          </div>
+
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
               <h3 className="mb-0">Frontend Developer</h3>
               <div className="subheading mb-3">Glamit - Team: Implementations</div>
               <p>
@@ -71,19 +84,6 @@ const IndexPage = () => (
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">December 2020 - March 2021</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">JS and React's mentor</h3>
-              <div className="subheading mb-3">CoderHouse</div>
-              <p>
-                Helping students in classes and after it in order to help them understand the basis and the concepts of Javascript and the React library, giving support and feedback to the student's code while revise the challenges of each class
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">July 2020 - Present</span>
             </div>
           </div>
 
