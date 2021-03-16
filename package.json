@@ -7,8 +7,8 @@
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-resume.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Ruben Mavarez",
+    "email": "rubenmavarezb@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.20.2",
@@ -43,9 +43,5 @@
     "gatsby-starter",
     "gatsby-starter-resume"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-resume/issues"
-  },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-resume#readme"
+  "license": "MIT"
 }

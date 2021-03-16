@@ -1,16 +1,28 @@
+body {
+  background-color: $colorhunt-black;
+}
+
 .bg-primary {
   background-color: $primary !important;
 }
 
 .text-primary {
   color: $primary !important;
+  font-weight: bold;
+  word-spacing: 2px;
+  text-transform: uppercase;
 }
 
 a {
   color: $primary;
+  transition: all .2s;
   &:hover,
   &:focus,
   &:active {
     color: darken($primary, 15%);
   }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $colorhunt-grey;
 }

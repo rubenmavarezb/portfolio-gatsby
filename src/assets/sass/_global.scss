@@ -3,12 +3,19 @@
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: $colorhunt-white;
 }
 @media (min-width: 992px) {
   body {
     padding-top: 0;
     padding-left: $sidebar-base-width;
+    &::-webkit-scrollbar  {
+      background-color: $colorhunt-black;
+      width: .4rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $colorhunt-red-1;
+    }
   }
 }
 
@@ -21,12 +28,15 @@ h6 {
   @include heading-font;
   font-weight: 700;
   text-transform: uppercase;
-  color: $gray-800;
+  color: $colorhunt-white;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4.3rem;
   line-height: 5.5rem;
+  @media (min-width: 992px) {
+    font-size: 6rem;
+  }
 }
 
 h2 {
@@ -54,18 +64,19 @@ p.lead {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $gray-700;
-    color: $white !important;
+    background-color: $colorhunt-grey;
+    color: $colorhunt-white !important;
     border-radius: 100%;
     text-align: center;
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin-right: 1rem;
+    transition: all .3s;
     &:last-child {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: $colorhunt-red-2;
     }
   }
 }
@@ -73,8 +84,26 @@ p.lead {
 .dev-icons {
   font-size: 3rem;
   .list-inline-item i {
+    transform: scale(1);
+    transition: all .3s;
     &:hover {
-      color: $primary;
+      color: $colorhunt-red-1;
+      padding: 0 1.5rem;
+      transform: scale(2);
     }
+  }
+}
+
+.certificate {
+
+  &:link,
+  &:visited {
+    color: $colorhunt-white;
+    transition: all .2s;
+  }
+
+  &:hover {
+    color: $colorhunt-red-1;
+    text-decoration: none;
   }
 }

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
-
-import avatar from '../assets/images/avatar.png';
-import config from '../../config';
+import avatar from '../assets/images/photo.jpg';
+import logo from '../assets/img/logo.png';
 
 export class Sidebar extends Component {
   constructor(props) {
@@ -15,7 +14,8 @@ export class Sidebar extends Component {
         { content: 'Education', href: 'education' },
         { content: 'Skills', href: 'skills' },
         { content: 'Interests', href: 'interests' },
-        { content: 'Awards', href: 'awards' },
+        { content: 'Certifications', href: 'certifications' },
+        { content: 'Resume', href: 'resume' },
       ],
       isCollapsed: true,
     };
@@ -35,15 +35,17 @@ export class Sidebar extends Component {
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
         id="sideNav"
       >
-        <a className="navbar-brand" href="#page-top">
+        <a className="navbar-brand" href="#page-top" style={{width: '70%'}}>
           <span className="d-block d-lg-none">
-            {config.firstName} {config.lastName}
+            <div style={{ width: '20%'}}>
+              <img src={logo} alt="" style={{ width: '100%'}}/>
+            </div>
           </span>
           <span className="d-none d-lg-block">
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"
               src={avatar}
-              alt=""
+              alt="profile pic"
             />
           </span>
         </a>

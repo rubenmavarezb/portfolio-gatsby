@@ -25,7 +25,13 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
-$primary: $purple !default;
+$colorhunt-black: #252525;
+$colorhunt-red-1: #ff0000;
+$colorhunt-red-2: #af0404;
+$colorhunt-grey: #414141;
+$colorhunt-white: #f5f4f4;
+
+$primary: $colorhunt-red-1 !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
